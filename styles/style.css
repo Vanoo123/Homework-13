@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_wrapper {
+    padding: 35px;
+}
+
+.navbar li {
+    list-style: none;
+    margin-right: 15px;
+    display: flex;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar li::after {
+    content: "";
+    width: 1px;
+    height: 16px;
+    background-color: black;
+    margin-left: 15px;
+}
+
+.navbar li:last-child:after {
+    display: none;
+}
+
+.contact_wrapper {
+    display: flex;
+    max-width: 1024px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 25px;
+    justify-content: space-between;
+}
+
+.contact_box h1 {
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+}
+
+.contact_box ul li {
+    list-style: none;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.contact_box ul li a {
+    color: black;
+}
+
+.contact_box ul li:nth-child(5) {
+    margin-top: 30px;
+}
+
+.social_icons {
+    margin-top: 30px;
+}
+
+.social_links {
+    margin-top: 10px;
+}
+
+.social_links a {
+    margin-left: 15px;
+    color: black;
+    font-size: 18px;
+}
+
+.input_box h1 {
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+}
+
+.inputes input {
+    font-size: 18px;
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+    outline: none;
+}
+
+::placeholder {
+    color: gray;
+}
+
+.inputes textarea {
+    outline: none;
+    color: gray;
+    font-size: 18px;
+    width: 350px;
+    resize: none;
+    border: none;
+    padding: 15px 0;
+    border-bottom: 1px solid black;
+}
+
+.button {
+    margin-top: 30px;
+    background-color: #FF7600;
+    display: flex;
+    padding: 15px;
+    width: 157px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: #fff;
+    letter-spacing: 1.2px;
+}
+
+.button img {
+    width: 25px;
+    height: 25px;
+}
+
+.button p {
+    display: flex;
+}
+
+.button p::before {
+    content: "";
+    width: 2px;
+    height: 17px;
+    background-color: #fff;
+    margin-right: 7px
+}
+
+@media (max-width: 1024px) {
+    .contact_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+
